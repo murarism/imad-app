@@ -18,12 +18,11 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-  res.send('Requested for article-one'); 
-  res.send(req);
-});
+  res.sendFile(path.join(__dirname, 'ui', 'article-one.html')); 
+  });
 
 app.get('/article-two', function (req, res) {
-  res.send('Requested for article-Two'); 
+  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 
 
